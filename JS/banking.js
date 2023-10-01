@@ -32,7 +32,7 @@ document.getElementById('deposit-button').addEventListener('click', function() {
     updatePrimaryText('deposit-primary', secondaryAmount)
     //update balance with deposit input
         balanceUpdate(secondaryAmount, true);
-  };
+  };o
 });
 
 // get withdraw and update withdraw total
