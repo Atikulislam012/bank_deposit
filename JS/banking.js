@@ -54,3 +54,48 @@ document.getElementById('withdraw-button').addEventListener('click', function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+if(secondaryValue > 0){
+    // start
+    let textBox1 = document.getElementById('text-box1');
+  
+    let date = new Date();
+    
+    let time = `Time:- ${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
+    let countList = document.getElementById("depositList");
+    let count = countList.childElementCount;
+    let list = document.createElement("p");
+    list.innerHTML = `${count + 1 }.--> Deposit Amount: ${secondaryValue}.00 TK <br> ${time}`;
+    countList.appendChild(list);
+    
+        // end
+    
+        document.getElementById("deposit-primary").value = "";
+}
+
+// withdraw function
+
+
+    // start
+    let textBox2 = document.getElementById('text-box2');
+  
+    let date = new Date();
+    
+    let time = `Time:- ${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
+    let countList = document.getElementById("withdrawList");
+    let count = countList.childElementCount;
+    let list = document.createElement("p");
+    list.innerHTML= `${count + 1 }.--> Withdraw Amount: ${newWithdrawValueNumber}.00 TK <br> ${time}`;
+    countList.appendChild(list);
+        // end
+        document.getElementById("withdraw-field").value = "";
+
